@@ -1,0 +1,35 @@
+version: 0.0.1
+type: plugin
+author: engchina
+name: pdf-to-png
+label:
+  en_US: pdf-to-png
+  ja_JP: pdf-to-png
+  zh_Hans: pdf-to-png
+  pt_BR: pdf-to-png
+description:
+  en_US: A plugin that converts PDF files into individual PNG images, one image per page.
+  ja_JP: A plugin that converts PDF files into individual PNG images, one image per page.
+  zh_Hans: A plugin that converts PDF files into individual PNG images, one image per page.
+  pt_BR: A plugin that converts PDF files into individual PNG images, one image per page.
+icon: icon.svg
+icon_dark: icon-dark.svg
+resource:
+  memory: 268435456
+  permission: {}
+plugins:
+  tools:
+    - provider/pdf-to-png.yaml
+meta:
+  version: 0.0.1
+  arch:
+    - amd64
+    - arm64
+  runner:
+    language: python
+    version: "3.12"
+    entrypoint: main
+  minimum_dify_version: 1.7.1
+created_at: 2025-08-04T09:31:05.276078965+08:00
+privacy: PRIVACY.md
+verified: false

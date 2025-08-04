@@ -1,0 +1,30 @@
+identity:
+  name: "pdf-to-png"
+  author: "engchina"
+  label:
+    en_US: "pdf-to-png"
+    zh_Hans: "pdf-to-png"
+    pt_BR: "pdf-to-png"
+description:
+  human:
+    en_US: "A plugin that converts PDF files into individual PNG images, one image per page."
+    zh_Hans: "A plugin that converts PDF files into individual PNG images, one image per page."
+    pt_BR: "A plugin that converts PDF files into individual PNG images, one image per page."
+  llm: "A plugin that converts PDF files into individual PNG images, one image per page."
+parameters:
+  - name: query
+    type: string
+    required: true
+    label:
+      en_US: Query string
+      zh_Hans: 查询语句
+      pt_BR: Query string
+    human_description:
+      en_US: "A plugin that converts PDF files into individual PNG images, one image per page."
+      zh_Hans: "A plugin that converts PDF files into individual PNG images, one image per page."
+      pt_BR: "A plugin that converts PDF files into individual PNG images, one image per page."
+    llm_description: "A plugin that converts PDF files into individual PNG images, one image per page."
+    form: llm
+extra:
+  python:
+    source: tools/pdf-to-png.py
